@@ -13,10 +13,10 @@ const fetchApi = async () => {
     return {data}
 }
 
-const getAllProducts = async (): Promise<string> => {
+const getAllProducts = async (): Promise<any[]> => {
     const products = await fetchApi()
 
-    return JSON.stringify(products.data)
+    return products.data
 }
 
 export default  getAllProducts

@@ -20,8 +20,17 @@ useEffect(()=>{
 
 })
   return (
-    <>
-      {products}
-    </>
+    <ul>
+
+      {
+        products.map((product,i)=>{
+          return (
+            <li key={i}>
+           {product.title}
+            </li>
+          )
+        })
+      }
+    </ul>
   )
 }

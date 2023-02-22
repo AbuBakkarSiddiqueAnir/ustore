@@ -17,11 +17,11 @@ export async function getStaticProps(){
 export default function Home({products} : InferGetStaticPropsType<typeof getStaticProps>) {
 
 useEffect(()=>{
-  console.log(products)
+  console.log(products[0])
 })
   return (
     <ul>
-
+      {JSON.stringify(products)}
     </ul>
   )
 }

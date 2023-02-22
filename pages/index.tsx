@@ -17,20 +17,11 @@ export async function getStaticProps(){
 export default function Home({products} : InferGetStaticPropsType<typeof getStaticProps>) {
 
 useEffect(()=>{
-
+  console.log(products)
 })
   return (
     <ul>
-
-      {
-        products.map((product,i)=>{
-          return (
-            <li key={i}>
-           {product.title}
-            </li>
-          )
-        })
-      }
+      =
     </ul>
   )
 }

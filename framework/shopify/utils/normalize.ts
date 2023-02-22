@@ -4,7 +4,7 @@ import {
     Product as ShopifyProduct
 } from '../schema'
 
-import {Product} from '../../common/types/product'
+import {Product} from '@common/types/product'
 
 export function normalizeProductImages ({edges}: {edges:Array<ImageEdge>}){
     return edges.map(({node:{originalSrc:url, ...rest}})=>{

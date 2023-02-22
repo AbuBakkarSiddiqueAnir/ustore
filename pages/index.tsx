@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { InferGetStaticPropsType } from "next"
-import getAllProducts from "../framework/shopify/products/get-all-products"
+import getAllProducts from "@framework/products/get-all-products"
 
 export async function getStaticProps(){
   const products = await getAllProducts()

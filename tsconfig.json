@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl":".",
+    "baseUrl": ".",
     "lib": [
       "dom",
       "dom.iterable",
@@ -18,14 +18,28 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "paths" : {
-      "@common": ["framework/common"],
-      "@common/*": ["framework/common/*"],
-      "@framework": ["framework/shopify"],
-      "@framework/*": ["framework/shopify/*"],
-      "@components/*": ["components/*"],
-      "@assets/*": ["assets/*"],
-      "@lib/*": ["lib/*"]
+    "paths": {
+      "@common": [
+        "framework/common"
+      ],
+      "@common/*": [
+        "framework/common/*"
+      ],
+      "@framework": [
+        "framework/shopify"
+      ],
+      "@framework/*": [
+        "frameworkshopify/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@lib/*": [
+        "lib/*"
+      ]
     }
   },
   "include": [

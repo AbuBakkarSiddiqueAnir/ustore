@@ -22,7 +22,7 @@ export async function getStaticProps() {
 export default function Home({ products }: InferGetStaticPropsType<typeof getStaticProps>) {
 
   return (
-    <ul className="bg-[#fff]">
+    <ul >
       {JSON.stringify(products)}
     </ul>
   )

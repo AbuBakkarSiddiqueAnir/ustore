@@ -3,6 +3,7 @@ import { InferGetStaticPropsType } from "next"
 import getAllProducts from "@framework/products/get-all-products"
 import { getConfig } from "@framework/api/config"
 import { Layout } from '@components/common';
+import { ProductCart } from "@components/common/product";
 
 export async function getStaticProps() {
   const config = getConfig()
@@ -23,7 +24,16 @@ export default function Home({ products }: InferGetStaticPropsType<typeof getSta
 
   return (
     <ul >
-      {JSON.stringify(products)}
+      {
+        products.map((product)=>{
+          return (
+            <li>
+                 <ProductCart product={product}/>
+              </li>
+
+          )
+        })
+      }
     </ul>
   )
 }

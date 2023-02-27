@@ -16,6 +16,4 @@ module.exports = withFrameworkConfig({
 //   reactStrictMode: true,
 // }
 
-console.log(module.exports)
-
 // module.exports = nextConfig

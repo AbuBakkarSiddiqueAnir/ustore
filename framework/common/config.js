@@ -25,7 +25,7 @@ function withFrameworkConfig(defaultConfig = {}) {
         parser:'json'
     }))
 
-    console.log(tsConfig)
+
     return config
 
 }

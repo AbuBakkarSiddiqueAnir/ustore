@@ -9,10 +9,10 @@ type LayoutProps = {
 const Layout:React.FC<LayoutProps> = ({ children }) => {
 
     return (
-        <div className='layout'>
+        <main className='root'>
 
             {children}
-        </div>
+        </main>
     )
 }
 export default Layout;

@@ -6,7 +6,7 @@ U-store is an ecommerce application
 
 NextJs, Tailwind, Typescript
 
- - Live :
+ - Live : https://ustore.vercel.app
 
 ## Getting Started
 

@@ -4,6 +4,7 @@ import getAllProducts from "@framework/products/get-all-products"
 import { getConfig } from "@framework/api/config"
 import { Layout } from '@components/common';
 import { ProductCart } from "@components/common/product";
+import {Grid} from '@components/ui';
 
 export async function getStaticProps() {
   const config = getConfig()
@@ -27,9 +28,9 @@ export default function Home({ products }: InferGetStaticPropsType<typeof getSta
       {
         products.map((product)=>{
           return (
-            <li>
+            <Grid>
                  <ProductCart product={product}/>
-              </li>
+              </Grid>
 
           )
         })

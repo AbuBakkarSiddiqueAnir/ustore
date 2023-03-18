@@ -11,6 +11,4 @@ export interface Product {
     description:string
     slug:string
     images: ProductImage[]
-
-
 }
